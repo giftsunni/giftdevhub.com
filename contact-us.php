@@ -669,7 +669,7 @@
                             </div>
                             <div>
                                 <h5>Our Headquarters</h5>
-                                <p class="mb-2">123 Innovation Boulevard<br>San Francisco, CA 94107<br>United States</p>
+                                <p class="mb-2">No. 5 Palevi close Eliogobolo, <br> Eliozu, River state, <br> Port Harcourt</p>
                                 <a href="#" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#mapModal">
                                     <i class="fas fa-directions me-1"></i> View on Map
                                 </a>
@@ -700,21 +700,21 @@
                                 <h5>Email Us</h5>
                                 <ul class="list-unstyled">
                                     <li class="mb-2">
-                                        <a href="mailto:hello@yourcompany.com" class="d-flex align-items-center">
+                                        <a href="mailto:giftdevhub@gmail.com" class="d-flex align-items-center">
                                             <i class="fas fa-envelope-open-text text-primary me-2"></i>
-                                            <span>hello@yourcompany.com</span>
+                                            <span>giftdevhub@gmail.com</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
-                                        <a href="mailto:support@yourcompany.com" class="d-flex align-items-center">
+                                        <a href="mailto:support@giftdevhub.com" class="d-flex align-items-center">
                                             <i class="fas fa-headset text-primary me-2"></i>
-                                            <span>support@yourcompany.com</span>
+                                            <span>support@giftdevhub.com</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="mailto:careers@yourcompany.com" class="d-flex align-items-center">
+                                        <a href="mailto:careers@giftdevhub.com" class="d-flex align-items-center">
                                             <i class="fas fa-briefcase text-primary me-2"></i>
-                                            <span>careers@yourcompany.com</span>
+                                            <span>careers@giftdevhub.com</span>
                                         </a>
                                     </li>
                                 </ul>

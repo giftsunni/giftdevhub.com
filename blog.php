@@ -556,7 +556,7 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644" alt="Learning Approach" class="img-fluid rounded shadow">
+                    <img src="./src/assests/img/IMG-20250813-WA0011.jpg" alt="Learning Approach" class="img-fluid rounded shadow">
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <h2 class="fw-bold mb-4">Our <span class="text-primary">Learning</span> Approach</h2>

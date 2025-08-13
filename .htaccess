@@ -1,0 +1,24 @@
+# Enable the rewrite engine - required for mod_rewrite to work
+RewriteEngine On
+
+# Remove .php extension from URLs (e.g., example.com/page instead of example.com/page.php)
+# This rule matches any URL that doesn't contain a dot (.) before the end of the string
+# The [NC] flag makes it case-insensitive, [L] means this is the last rule to process if matched
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Remove .html extension from URLs (similar to above but for .html files)
+# Note: This rule will never be reached because the previous rule will always match first
+# You should combine these or prioritize one over the other
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# The following conditions prevent infinite loops and ensure we only rewrite valid requests
+# Only process the rewrite if the requested filename is not an existing file
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Only process the rewrite if the requested filename is not an existing directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Force HTTPS by redirecting all HTTP traffic to HTTPS
+# Checks if the server port is 80 (standard HTTP port)
+# Note: This rule is incomplete - needs a RewriteRule to actually perform the redirect
+RewriteCond %{SERVER_PORT} 80

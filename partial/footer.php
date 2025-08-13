@@ -71,7 +71,7 @@
                     <h5 class="text-white mb-4 animate__animated animate__fadeInDown">Contact Us</h5>
                     <ul class="list-unstyled">
                         <li class="mb-3 animate__animated animate__fadeInUp animate__delay-1s">
-                            <i class="fas fa-map-marker-alt me-2 text-primary"></i> No. 5 Palevi close Eliogobolo River state, Port Harcourt
+                            <i class="fas fa-map-marker-alt me-2 text-primary"></i> No. 5 Palevi close Eliogobolo, Eliozu, River state, Port Harcourt
                         </li>
                         <li class="mb-3 animate__animated animate__fadeInUp animate__delay-2s">
                             <i class="fas fa-phone me-2 text-primary"></i> +234 8187818257

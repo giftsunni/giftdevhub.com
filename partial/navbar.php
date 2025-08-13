@@ -244,7 +244,7 @@
             <!-- Centered Navigation Links -->
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="home.php">Home</a>
+                    <a class="nav-link active" href="home">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -259,20 +259,20 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./about-us.php">About Us</a>
+                    <a class="nav-link" href="./about-us">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./blog.php">Blog</a>
+                    <a class="nav-link" href="./blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./contact-us.php">Contact</a>
+                    <a class="nav-link" href="./contact-us">Contact</a>
                 </li>
             </ul>
 
             <!-- Right-aligned items (Account) -->
             <div class="d-flex align-items-center">
                 <div class="ms-3">
-                    <a href="register.php" class="btn btn-primary">Create Account</a>
+                    <a href="register" class="btn btn-primary">Create Account</a>
                 </div>
             </div>
         </div>
