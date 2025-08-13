@@ -470,10 +470,10 @@
                 <!-- Team Member 1 -->
                 <div class="col-lg-3 col-md-6" data-aos="zoom-in">
                     <div class="team-card card h-100">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="card-img-top team-img" alt="John Doe">
+                        <img src="" class="card-img-top team-img" alt="John Doe">
                         <div class="card-body text-center">
                             <h5 class="card-title">John Doe</h5>
-                            <p class="text-muted">CEO & Founder</p>
+                            <p class="text-muted">Founder</p>
                             <div class="social-links mt-3">
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -486,7 +486,7 @@
                 <!-- Team Member 2 -->
                 <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                     <div class="team-card card h-100">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="card-img-top team-img" alt="Jane Smith">
+                        <img src="" class="card-img-top team-img" alt="Jane Smith">
                         <div class="card-body text-center">
                             <h5 class="card-title">Jane Smith</h5>
                             <p class="text-muted">CTO</p>
@@ -502,7 +502,7 @@
                 <!-- Team Member 3 -->
                 <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                     <div class="team-card card h-100">
-                        <img src="https://randomuser.me/api/portraits/men/67.jpg" class="card-img-top team-img" alt="Mike Johnson">
+                        <img src="" class="card-img-top team-img" alt="Mike Johnson">
                         <div class="card-body text-center">
                             <h5 class="card-title">Mike Johnson</h5>
                             <p class="text-muted">Lead Developer</p>
@@ -518,7 +518,7 @@
                 <!-- Team Member 4 -->
                 <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                     <div class="team-card card h-100">
-                        <img src="https://randomuser.me/api/portraits/women/68.jpg" class="card-img-top team-img" alt="Sarah Williams">
+                        <img src="" class="card-img-top team-img" alt="Sarah Williams">
                         <div class="card-body text-center">
                             <h5 class="card-title">Sarah Williams</h5>
                             <p class="text-muted">UX Designer</p>
