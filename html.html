@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Details - DyseaTech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+        }
+
+        .banner {
+            background: linear-gradient(to right, #ff6600, #0066ff);
+            padding: 80px 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .banner .meta {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .blog-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            gap: 30px;
+            padding: 0 15px;
+        }
+
+        .blog-content {
+            flex: 3;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .blog-content img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .blog-content h2 {
+            margin-top: 20px;
+        }
+
+        .blog-content p {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        .sidebar .widget {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .sidebar .widget h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .sidebar .widget ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar .widget ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar .widget ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .sidebar .widget ul li a:hover {
+            color: #ff6600;
+        }
+    </style>
+    <!-- Blog Header -->
+    <section class="banner" data-aos="fade-down">
+        <h1>Turn Your Website Into a Mobile App with DyseaTech</h1>
+        <div class="meta">
+            <i class='bx bxs-calendar'></i> August 5, 2024 &nbsp; | &nbsp;
+            <i class='bx bxs-user'></i> Admin
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <div class="blog-container">
+
+        <!-- Main Article -->
+        <div class="blog-content" data-aos="fade-up">
+            <img src="../uploads/33a0e8f379a385804b8fbfc2e8a349794ff8a70918ee16e3da206f04903d2148.jpg" alt="Blog Image">
+
+            <p>
+                In today's fast-paced digital world, businesses are constantly seeking innovative ways to reach their
+                customers. One of the most effective strategies is converting your website into a mobile application...
+            </p>
+
+            <h2>Why Go Mobile?</h2>
+            <p>
+                Mobile apps offer faster access, better user experience, and offline capabilities that websites can't
+                match...
+            </p>
+
+            <h2>Steps to Convert Your Website to an App</h2>
+            <p>
+                1. Assess your website's mobile compatibility.<br>
+                2. Choose the right framework or platform for conversion.<br>
+                3. Ensure your app is optimized for speed and performance...
+            </p>
+
+            <p>
+                Ready to take your business mobile? Our team at DyseaTech specializes in creating seamless mobile
+                experiences that keep your users engaged.
+            </p>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" data-aos="fade-left">
+
+            <!-- Recent Posts -->
+            <div class="widget">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="#">How AI is Changing the Tech Industry</a></li>
+                    <li><a href="#">Top 5 UI/UX Trends in 2024</a></li>
+                    <li><a href="#">Boost Your SEO with These Tips</a></li>
+                </ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="widget">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Mobile Development</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Technology News</a></li>
+                </ul>
+            </div>
+
+        </aside>
+    </div>
+
+    <!-- AOS Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>
