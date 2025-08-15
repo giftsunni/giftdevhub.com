@@ -1,4 +1,4 @@
-<?php require './partial/head.php'?>
+<?php require './partial/head.php' ?>
 
 <body>
 
@@ -7,10 +7,10 @@
 
 
     <!-- Hero Section with Background Image -->
-    <section class="hero-section text-center position-relative" style="height: 80vh; min-height: 500px; max-height: 800px; overflow: hidden;">
-        <!-- Background Image with Overlay -->
-        <div class="hero-background" style="
-        background-image: url('./computer01.avif');
+   <section class="hero-section position-relative" style="height: 90vh; min-height: 600px; max-height: 1000px; overflow: hidden;">
+    <!-- Background Image with Overlay -->
+    <div class="hero-background" style="
+        background-image: url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -19,32 +19,83 @@
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: 0.3;
+        opacity: 0.4;
         z-index: -1;
     "></div>
 
-        <!-- Color Overlay -->
-        <div class="hero-overlay" style="
+    <!-- Color Overlay -->
+    <div class="hero-overlay" style="
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, rgba(71, 111, 198, 0.5) 0%, rgba(122, 73, 149, 0.5) 100%);
+        background: linear-gradient(135deg, rgba(41, 82, 178, 0.7) 0%, rgba(92, 43, 119, 0.7) 100%);
         z-index: -1;
     "></div>
 
-        <div class="container h-100 d-flex align-items-center justify-content-center">
-            <div class="hero-content animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-duration="1000">
-                <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInDown" style="animation-delay: 0.3s; color: #ffffff; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Innovative Solutions for Your Business</h1>
-                <p class="lead mb-5 animate__animated animate__fadeInUp" style="animation-delay: 0.6s; color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">We help you grow your business with cutting-edge technology and expert services</p>
-                <div class="mm d-grid gap-3 d-sm-flex justify-content-sm-center animate__animated animate__fadeIn" style="animation-delay: 0.9s;">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="window.location.href='login.php'">Get Started</button>
-                    <button type="button" class="btn btn-outline-light btn-lg px-4">Learn More</button>
+    <div class="container h-100 d-flex align-items-center">
+        <div class="row align-items-center">
+            <div class="col-lg-7 text-lg-start text-center" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInDown" style="animation-delay: 0.3s; color: #ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+                    Crafting Digital <span class="text-primary">Masterpieces</span>
+                </h1>
+                <p class="lead mb-5 animate__animated animate__fadeInUp" style="animation-delay: 0.6s; color: #ffffff; text-shadow: 0 1px 3px rgba(0,0,0,0.3); font-size: 1.4rem;">
+                    Professional <span class="fw-bold">mobile app development</span> and <span class="fw-bold">web solutions</span>.
+                    <br>Passing on knowledge through <span class="fw-bold">personalized training</span>.
+                </p>
+                <div class="d-flex flex-wrap gap-3 justify-content-lg-start justify-content-center animate__animated animate__fadeIn" style="animation-delay: 0.9s;">
+                    <button type="button" class="btn btn-primary btn-lg px-4 py-3 fw-bold" onclick="window.location.href='#contact'">
+                        <i class="fas fa-paper-plane me-2"></i> Contact Us
+                    </button>
+                    <button type="button" class="btn btn-outline-light btn-lg px-4 py-3 fw-bold" onclick="window.location.href='#portfolio'">
+                        <i class="fas fa-briefcase me-2"></i> My Work
+                    </button>
+                    <button type="button" class="btn btn-outline-primary btn-lg px-4 py-3 fw-bold" onclick="window.location.href='#courses'">
+                        <i class="fas fa-chalkboard-teacher me-2"></i> Learn With Me
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left" data-aos-duration="1000">
+                <div class="position-relative" style="max-width: 300px; margin: 0 auto;">
+                    <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Mobile App Development" 
+                         class="img-fluid rounded-4 shadow-lg" 
+                         style="border: 8px solid white; transform: perspective(1000px) rotateY(-15deg);">
+                    <div class="position-absolute bg-white rounded-pill px-3 py-2 shadow-sm" 
+                         style="bottom: -20px; right: -30px; transform: rotate(15deg);">
+                        <span class="text-dark fw-bold">
+                            <i class="fas fa-star text-warning me-1"></i> 5.0 Rating
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- Tech Stack Badges -->
+    <div class="position-absolute bottom-0 start-0 w-100 py-3 animate__animated animate__fadeIn d-none" style="animation-delay: 1.2s; background: rgba(0,0,0,0.2);">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <span class="badge bg-dark px-3 py-2">
+                    <i class="fab fa-react text-info me-1"></i> React Native
+                </span>
+                <span class="badge bg-dark px-3 py-2">
+                    <i class="fab fa-swift text-orange me-1"></i> Swift
+                </span>
+                <span class="badge bg-dark px-3 py-2">
+                    <i class="fab fa-js-square text-warning me-1"></i> JavaScript
+                </span>
+                <span class="badge bg-dark px-3 py-2">
+                    <i class="fab fa-node-js text-success me-1"></i> Node.js
+                </span>
+                <span class="badge bg-dark px-3 py-2">
+                    <i class="fas fa-fire text-danger me-1"></i> Flutter
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <style>
@@ -772,7 +823,7 @@
                         <div class="col-md-4 animate__animated animate__fadeInRight animate__delay-2s">
                             <button type="submit" style="background-color: #070f1fff; color:white" class="btn btn-primaryy btn-lg w-100 py-3 subscribe-btn">
                                 <span class="subscribe-text">Subscribe</span>
-                                
+
                                 <span class="subscribe-icon ms-2"><i class="fas fa-paper-plane"></i></span>
                             </button>
                         </div>

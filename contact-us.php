@@ -311,7 +311,7 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <h4>Our Location</h4>
-                            <p class="mb-0">123 Tech Park Avenue<br>San Francisco, CA 94107</p>
+                            <p class="mb-0">No 5 Palevi Close Eliogobolo Eliozu <br>Port Harcourt River State</p>
                         </div>
                     </div>
                 </div>
