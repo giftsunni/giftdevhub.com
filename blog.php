@@ -348,7 +348,7 @@
                             line-height: 1.4;
                             font-weight: 700;
                         ">
-                                <a href="#" style="
+                                <a href="details.html" style="
                                 color: #333;
                                 text-decoration: none;
                                 background-image: linear-gradient(#0066ff, #0066ff);

@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left" data-aos-duration="1000">
-                <div class="position-relative" style="max-width: 300px; margin: 0 auto;">
+                <div class="position-relative" style="max-width: 500px; margin: 0 auto;">
                     <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                          alt="Mobile App Development" 
                          class="img-fluid rounded-4 shadow-lg" 

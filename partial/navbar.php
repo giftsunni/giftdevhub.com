@@ -212,18 +212,49 @@
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <div style="display: inline-block; padding: 2px; background: white; border-radius: 8px;">
-                <span style="font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
-             font-size: 20px;
-             font-weight: 800;
-             color: #0B182B;
-             line-height: 1;
-             letter-spacing: -1.5px;
-             text-transform: capitalize;">
-                    GiftDevHub
-                </span>
-            </div>
-        </a>
+    <div class="logo-container">
+        <img src="./logo2.jpg" alt="Logo" class="logo-img">
+    </div>
+</a>
+
+<style>
+/* Logo container */
+.logo-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 6px; */
+    /* background: #fff; */
+    border-radius: 14px;
+    /* border: 3px solid #0B182B; Bold dark border */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.logo-container:hover {
+    transform: scale(1.07);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+/* Logo image */
+.logo-img {
+    width: 150px; /* Bigger logo */
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .logo-img {
+        width: 90px;
+        max-height: 70px;
+    }
+}
+</style>
+
+
 
         <!-- Mobile Contact Info (shown only on mobile) -->
         <div class="mobile-contact-info d-lg-none">
@@ -272,7 +303,7 @@
             <!-- Right-aligned items (Account) -->
             <div class="d-flex align-items-center">
                 <div class="ms-3">
-                    <a href="register" class="btn btn-primary">Create Account</a>
+                    <a href="register" class="btn btn-outline-primary" style="font-weight: 800;">Create Account</a>
                 </div>
             </div>
         </div>
