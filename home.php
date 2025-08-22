@@ -7,9 +7,9 @@
 
 
     <!-- Hero Section with Background Image -->
-   <section class="hero-section position-relative" style="height: 90vh; min-height: 600px; max-height: 1000px; overflow: hidden;">
-    <!-- Background Image with Overlay -->
-    <div class="hero-background" style="
+    <section class="hero-section position-relative" style="height: 90vh; min-height: 600px; max-height: 1000px; overflow: hidden;">
+        <!-- Background Image with Overlay -->
+        <div class="hero-background" style="
         background-image: url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
         background-size: cover;
         background-position: center;
@@ -23,8 +23,8 @@
         z-index: -1;
     "></div>
 
-    <!-- Color Overlay -->
-    <div class="hero-overlay" style="
+        <!-- Color Overlay -->
+        <div class="hero-overlay" style="
         position: absolute;
         top: 0;
         left: 0;
@@ -34,68 +34,68 @@
         z-index: -1;
     "></div>
 
-    <div class="container h-100 d-flex align-items-center">
-        <div class="row align-items-center">
-            <div class="col-lg-7 text-lg-start text-center" data-aos="fade-right" data-aos-duration="1000">
-                <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInDown" style="animation-delay: 0.3s; color: #ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.4);">
-                    Crafting Digital <span class="text-primary">Masterpieces</span>
-                </h1>
-                <p class="lead mb-5 animate__animated animate__fadeInUp" style="animation-delay: 0.6s; color: #ffffff; text-shadow: 0 1px 3px rgba(0,0,0,0.3); font-size: 1.4rem;">
-                    Professional <span class="fw-bold">mobile app development</span> and <span class="fw-bold">web solutions</span>.
-                    <br>Passing on knowledge through <span class="fw-bold">personalized training</span>.
-                </p>
-                <div class="d-flex flex-wrap gap-3 justify-content-lg-start justify-content-center animate__animated animate__fadeIn" style="animation-delay: 0.9s;">
-                    <button type="button" class="btn btn-primary btn-lg px-4 py-3 fw-bold" onclick="window.location.href='#contact'">
-                        <i class="fas fa-paper-plane me-2"></i> Contact Us
-                    </button>
-                    <button type="button" class="btn btn-outline-light btn-lg px-4 py-3 fw-bold" onclick="window.location.href='#portfolio'">
-                        <i class="fas fa-briefcase me-2"></i> My Work
-                    </button>
-                    <button type="button" class="btn btn-outline-primary btn-lg px-4 py-3 fw-bold" onclick="window.location.href='#courses'">
-                        <i class="fas fa-chalkboard-teacher me-2"></i> Learn With Me
-                    </button>
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-lg-start text-center" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInDown" style="animation-delay: 0.3s; color: #ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+                        Crafting Digital <span class="text-primary">Masterpieces</span>
+                    </h1>
+                    <p class="lead mb-5 animate__animated animate__fadeInUp" style="animation-delay: 0.6s; color: #ffffff; text-shadow: 0 1px 3px rgba(0,0,0,0.3); font-size: 1.4rem;">
+                        Professional <span class="fw-bold">mobile app development</span> and <span class="fw-bold">web solutions</span>.
+                        <br>Passing on knowledge through <span class="fw-bold">personalized training</span>.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-lg-start justify-content-center animate__animated animate__fadeIn" style="animation-delay: 0.9s;">
+                        <button type="button" class="btn btn-primary btn-lg px-4 py-3 fw-bold" onclick="window.location.href='#contact'">
+                            <i class="fas fa-paper-plane me-2"></i> Contact Us
+                        </button>
+                        <button type="button" class="btn btn-outline-light btn-lg px-4 py-3 fw-bold" onclick="window.location.href='#portfolio'">
+                            <i class="fas fa-briefcase me-2"></i> My Work
+                        </button>
+                        <button type="button" class="btn btn-outline-primary btn-lg px-4 py-3 fw-bold" onclick="window.location.href='#courses'">
+                            <i class="fas fa-chalkboard-teacher me-2"></i> Learn With Me
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left" data-aos-duration="1000">
-                <div class="position-relative" style="max-width: 500px; margin: 0 auto;">
-                    <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Mobile App Development" 
-                         class="img-fluid rounded-4 shadow-lg" 
-                         style="border: 8px solid white; transform: perspective(1000px) rotateY(-15deg);">
-                    <div class="position-absolute bg-white rounded-pill px-3 py-2 shadow-sm" 
-                         style="bottom: -20px; right: -30px; transform: rotate(15deg);">
-                        <span class="text-dark fw-bold">
-                            <i class="fas fa-star text-warning me-1"></i> 5.0 Rating
-                        </span>
+                <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="position-relative" style="max-width: 500px; margin: 0 auto;">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                            alt="Mobile App Development"
+                            class="img-fluid rounded-4 shadow-lg"
+                            style="border: 8px solid white; transform: perspective(1000px) rotateY(-15deg);">
+                        <div class="position-absolute bg-white rounded-pill px-3 py-2 shadow-sm"
+                            style="bottom: -20px; right: -30px; transform: rotate(15deg);">
+                            <span class="text-dark fw-bold">
+                                <i class="fas fa-star text-warning me-1"></i> 5.0 Rating
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Tech Stack Badges -->
-    <div class="position-absolute bottom-0 start-0 w-100 py-3 animate__animated animate__fadeIn d-none" style="animation-delay: 1.2s; background: rgba(0,0,0,0.2);">
-        <div class="container">
-            <div class="d-flex flex-wrap justify-content-center gap-3">
-                <span class="badge bg-dark px-3 py-2">
-                    <i class="fab fa-react text-info me-1"></i> React Native
-                </span>
-                <span class="badge bg-dark px-3 py-2">
-                    <i class="fab fa-swift text-orange me-1"></i> Swift
-                </span>
-                <span class="badge bg-dark px-3 py-2">
-                    <i class="fab fa-js-square text-warning me-1"></i> JavaScript
-                </span>
-                <span class="badge bg-dark px-3 py-2">
-                    <i class="fab fa-node-js text-success me-1"></i> Node.js
-                </span>
-                <span class="badge bg-dark px-3 py-2">
-                    <i class="fas fa-fire text-danger me-1"></i> Flutter
-                </span>
+        <!-- Tech Stack Badges -->
+        <div class="position-absolute bottom-0 start-0 w-100 py-3 animate__animated animate__fadeIn d-none" style="animation-delay: 1.2s; background: rgba(0,0,0,0.2);">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <span class="badge bg-dark px-3 py-2">
+                        <i class="fab fa-react text-info me-1"></i> React Native
+                    </span>
+                    <span class="badge bg-dark px-3 py-2">
+                        <i class="fab fa-swift text-orange me-1"></i> Swift
+                    </span>
+                    <span class="badge bg-dark px-3 py-2">
+                        <i class="fab fa-js-square text-warning me-1"></i> JavaScript
+                    </span>
+                    <span class="badge bg-dark px-3 py-2">
+                        <i class="fab fa-node-js text-success me-1"></i> Node.js
+                    </span>
+                    <span class="badge bg-dark px-3 py-2">
+                        <i class="fas fa-fire text-danger me-1"></i> Flutter
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <style>
@@ -541,11 +541,16 @@
             </div>
         </div>
     </section>
+ <section class="py-5" id="process">
+        <div class="floating-icons">
+            <div class="floating-icon"><i class="fas fa-code"></i></div>
+            <div class="floating-icon"><i class="fas fa-paint-brush"></i></div>
+            <div class="floating-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="floating-icon"><i class="fas fa-server"></i></div>
+        </div>
 
-    <!-- Process Section -->
-    <section class="py-5 bg-light" id="process">
-        <div class="container py-5">
-            <div class="text-center mb-5" data-aos="fade-up">
+        <div class="container py-5 process-container">
+            <div class="text-center mb-5 section-title" data-aos="fade-up">
                 <h2 class="fw-bold">Our <span class="text-primary">Development</span> Process</h2>
                 <p class="lead">A structured approach to deliver quality software</p>
             </div>
@@ -555,8 +560,9 @@
                 <div class="process-step" data-aos="fade-right">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h4>Discovery & Planning</h4>
-                        <p>We analyze your requirements and create a detailed project roadmap with milestones and deliverables.</p>
+                        <h4><i class="fas fa-search"></i> Discovery & Planning</h4>
+                        <p>We analyze your requirements and create a detailed project roadmap with milestones and
+                            deliverables.</p>
                     </div>
                 </div>
 
@@ -564,8 +570,9 @@
                 <div class="process-step" data-aos="fade-left">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h4>UI/UX Design</h4>
-                        <p>Our designers create wireframes and prototypes to visualize the user experience before development begins.</p>
+                        <h4><i class="fas fa-palette"></i> UI/UX Design</h4>
+                        <p>Our designers create wireframes and prototypes to visualize the user experience before
+                            development begins.</p>
                     </div>
                 </div>
 
@@ -573,7 +580,7 @@
                 <div class="process-step" data-aos="fade-right">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h4>Development</h4>
+                        <h4><i class="fas fa-code"></i> Development</h4>
                         <p>We build your solution using agile methodology with regular updates and sprint reviews.</p>
                     </div>
                 </div>
@@ -582,7 +589,7 @@
                 <div class="process-step" data-aos="fade-left">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h4>Testing & QA</h4>
+                        <h4><i class="fas fa-bug"></i> Testing & QA</h4>
                         <p>Rigorous testing ensures your software performs flawlessly across all scenarios.</p>
                     </div>
                 </div>
@@ -591,83 +598,254 @@
                 <div class="process-step" data-aos="fade-right">
                     <div class="step-number">5</div>
                     <div class="step-content">
-                        <h4>Deployment & Support</h4>
+                        <h4><i class="fas fa-rocket"></i> Deployment & Support</h4>
                         <p>We handle deployment and provide ongoing maintenance and support services.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+     <style>
+        :root {
+            --primary: #0d6efd;
+            --secondary: #6c757d;
+            --dark: #0b182b;
+            --light: #f8f9fa;
+            --accent: #20c997;
+        }
 
-    <style>
-        .process-steps {
+     
+
+        #process {
             position: relative;
-            max-width: 800px;
+            overflow: hidden;
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #101c2fff 0%, #0b182bff 50%, #1e3a6b 100%);
+        }
+
+        #process::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 20% 30%, rgba(41, 128, 185, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(32, 201, 151, 0.1) 0%, transparent 40%);
+            z-index: 0;
+        }
+
+        .process-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-title {
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-weight: 800;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title .text-primary {
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+        }
+        .section-title .fw-bold{
+            color: #f2f2f2f2!important;
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 600px;
             margin: 0 auto;
         }
 
-        .process-steps:before {
+        .process-steps {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-left: 20px;
+        }
+
+        .process-steps::before {
             content: '';
             position: absolute;
-            width: 2px;
-            background: #0d6efd;
-            top: 0;
-            bottom: 0;
-            left: 50px;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+            top: 30px;
+            bottom: 30px;
+            left: 35px;
             z-index: 1;
+            border-radius: 3px;
         }
 
         .process-step {
             position: relative;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             display: flex;
             align-items: flex-start;
+            transition: transform 0.3s ease;
+        }
+
+        .process-step:hover {
+            transform: translateX(5px);
         }
 
         .step-number {
-            width: 60px;
-            height: 60px;
-            background: #0d6efd;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
+            font-size: 26px;
             font-weight: bold;
-            margin-right: 20px;
+            margin-right: 25px;
             z-index: 2;
             flex-shrink: 0;
+            box-shadow: 0 5px 15px rgba(13, 110, 253, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .step-number::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+            transform: rotate(30deg);
         }
 
         .step-content {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             flex-grow: 1;
+            border-left: 4px solid var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .process-step:hover .step-content {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
         }
 
         .step-content h4 {
-            color: #0d6efd;
-            margin-bottom: 10px;
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
         }
 
+        .step-content h4 i {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .step-content p {
+            color: var(--secondary);
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Responsive adjustments */
         @media (max-width: 768px) {
-            .process-steps:before {
-                left: 30px;
+            .process-steps::before {
+                left: 25px;
             }
 
             .step-number {
                 width: 50px;
                 height: 50px;
                 font-size: 20px;
+                margin-right: 15px;
+            }
+
+            .step-content {
+                padding: 20px;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
             }
         }
-    </style>
 
+        /* Animation for background elements */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .floating-icons {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .floating-icon {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.05);
+            font-size: 5rem;
+            z-index: 1;
+            animation: float 15s infinite ease-in-out;
+        }
+
+        .floating-icon:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-icon:nth-child(2) {
+            top: 30%;
+            right: 15%;
+            animation-delay: -2s;
+        }
+
+        .floating-icon:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            animation-delay: -5s;
+        }
+
+        .floating-icon:nth-child(4) {
+            bottom: 40%;
+            right: 10%;
+            animation-delay: -7s;
+        }
+    </style>
     <!-- Testimonials Section with Animations -->
-    <section class="container mb-5">
+    <section class="container mb-5 mt-5">
         <div class="text-center mb-5" data-aos="fade-up">
             <h2 class="fw-bold animate__animated animate__fadeInDown">What Our Clients Say</h2>
             <p class="lead text-muted animate__animated animate__fadeInUp animate__delay-1s">Don't just take our word for it</p>
