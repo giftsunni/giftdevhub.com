@@ -1,8 +1,524 @@
-<?php require './partial/head.php' ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giftdevhub</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Add these CDN links to your head section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<style>
+    /* Custom styles */
+    .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/random/1600x900/?technology');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 120px 0;
+        margin-bottom: 30px;
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #0d6efd;
+    }
+
+    .testimonial-card {
+        border-left: 4px solid #0d6efd;
+    }
+
+    .newsletter-section {
+        background-color: #f8f9fa;
+        padding: 60px 0;
+    }
+
+    footer {
+        background-color: #343a40;
+        color: white;
+        padding: 40px 0;
+    }
+
+    .social-icons a {
+        color: white;
+        font-size: 1.5rem;
+        margin-right: 15px;
+        transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+        color: #0d6efd;
+    }
+
+    .navbar {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-hover:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<script>
+    // Initialize AOS animation library
+    AOS.init({
+        once: true // Animations will only happen once
+    });
+
+    // Optional: Add scroll reveal effect
+    document.addEventListener('DOMContentLoaded', function() {
+        const hero = document.querySelector('.hero-section');
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            hero.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+        });
+    });
+</script>
+<!-- Newsletter Styles -->
+<style>
+    .newsletter-section {
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .subscribe-btn {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .subscribe-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+    }
+
+    .subscribe-btn:hover .subscribe-icon {
+        transform: translateX(5px);
+    }
+
+    .subscribe-icon {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    .input-group-text {
+        transition: all 0.3s ease;
+    }
+
+    .form-control:focus+.input-group-text {
+        background-color: #e9ecef;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .newsletter-circle {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .circle-1 {
+        animation-delay: 0s;
+    }
+
+    .circle-2 {
+        animation-delay: 2s;
+    }
+</style>
+
+
+
+
+
 
 <body>
 
-    <?php require './partial/navbar.php' ?>
+  <style>
+    /* Top Contact Bar Styles */
+    .top-contact-bar {
+        background-color: #0b182bff !important;
+        color: #f2f2f2;
+        padding: 8px 0;
+        font-size: 14px;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-details {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-details span {
+        margin-right: 20px;
+        color: #f2f2f2;
+    }
+
+    .contact-details i {
+        margin-right: 5px;
+        color: #4e73df;
+    }
+
+    .social-icons a {
+        color: #f2f2f2;
+        margin-left: 15px;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: #4e73df;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+        transition: all 0.3s ease;
+        padding: 15px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        background-color: white !important;
+    }
+
+    .navbar.scrolled {
+        padding: 10px 0;
+        background-color: white !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+        color: #0b182bff !important;
+    }
+
+    .navbar-brand i {
+        color: #4e73df;
+        transition: all 0.3s ease;
+    }
+
+    .nav-link {
+        font-weight: 500;
+        margin: 0 8px;
+        position: relative;
+        transition: all 0.3s ease;
+        color: #0b182bff !important;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #4e73df;
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        border: none;
+        padding: 0.5rem;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    /* Mobile Menu Styles */
+    @media (max-width: 991.98px) {
+        .top-contact-bar {
+            display: none;
+            /* Hide on mobile or adjust as needed */
+        }
+
+        .navbar-collapse {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 280px;
+            height: 100vh;
+            background-color: white;
+            padding: 80px 30px 30px;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .navbar-collapse.show {
+            right: 0;
+        }
+
+        .navbar-nav {
+            flex-direction: column !important;
+        }
+
+        .nav-item {
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 0.3s ease;
+            margin-bottom: 15px;
+        }
+
+        .navbar-collapse.show .nav-item {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .close-sidebar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #0b182bff !important;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-contact-info {
+            display: block;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            text-align: center;
+        }
+
+        .mobile-contact-info span {
+            display: block;
+            margin-bottom: 5px;
+            color: #495057;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .mobile-contact-info {
+            display: none;
+        }
+    }
+</style>
+
+<!-- Top Contact Bar -->
+<div class="top-contact-bar">
+    <div class="container">
+        <div class="contact-info">
+            <div class="contact-details">
+                <span><i class="fas fa-phone-alt"></i> +234 818 781 8257</span>
+                <span><i class="fas fa-envelope"></i> giftsunday34@gmail.com</span>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header/Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+    <div class="logo-container">
+        <img src="./logo2.jpg" alt="Logo" class="logo-img">
+    </div>
+</a>
+
+<style>
+/* Logo container */
+.logo-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 6px; */
+    /* background: #fff; */
+    border-radius: 14px;
+    /* border: 3px solid #0B182B; Bold dark border */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.logo-container:hover {
+    transform: scale(1.07);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+/* Logo image */
+.logo-img {
+    width: 150px; /* Bigger logo */
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .logo-img {
+        width: 90px;
+        max-height: 70px;
+    }
+}
+</style>
+
+
+
+        <!-- Mobile Contact Info (shown only on mobile) -->
+        <div class="mobile-contact-info d-lg-none">
+            <span><i class="fas fa-phone-alt"></i> +234 806 138 2683</span>
+            <span><i class="fas fa-envelope"></i> info@gifdevthub.com</span>
+        </div>
+
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation" id="navbarToggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Overlay that will appear when sidebar is open -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <button class="close-sidebar d-lg-none" id="closeSidebar">&times;</button>
+
+            <!-- Centered Navigation Links -->
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="home">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Courses
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                        <li><a class="dropdown-item" href="#">Frontend Development</a></li>
+                        <li><a class="dropdown-item" href="#">Backend Development</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact-us">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Right-aligned items (Account) -->
+            <div class="d-flex align-items-center">
+                <div class="ms-3">
+                    <a href="register" class="btn btn-outline-primary" style="font-weight: 800;">Create Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Sidebar toggle functionality
+    const navbarToggler = document.getElementById('navbarToggler');
+    const navbarCollapse = document.getElementById('navbarNav');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    const closeSidebar = document.getElementById('closeSidebar');
+
+    navbarToggler.addEventListener('click', function() {
+        navbarCollapse.classList.add('show');
+        sidebarOverlay.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    });
+
+    closeSidebar.addEventListener('click', function() {
+        closeMobileMenu();
+    });
+
+    sidebarOverlay.addEventListener('click', function() {
+        closeMobileMenu();
+    });
+
+    // Close navbar when clicking on a nav link
+    const navLinks = document.querySelectorAll('.nav-link, .btn');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 991.98) {
+                closeMobileMenu();
+            }
+        });
+    });
+
+    function closeMobileMenu() {
+        navbarCollapse.classList.remove('show');
+        sidebarOverlay.classList.remove('show');
+        document.body.style.overflow = 'auto';
+    }
+
+    // Close menu when window is resized above mobile breakpoint
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 991.98) {
+            closeMobileMenu();
+        }
+    });
+</script>
 
 
 
@@ -1021,8 +1537,481 @@
 
 
 
-    <?php require './partial/footer.php' ?>
-    <?php require './partial/script.php' ?>
+ <!-- Footer -->
+ <style>
+    .bd-footer{
+        background-color: #0b182bff !important;
+    }
+ </style>
+    <footer class="bd-footer text-white pt-5 pb-4 position-relative overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="footer-circle circle-1 position-absolute"></div>
+        <div class="footer-circle circle-2 position-absolute"></div>
+
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row g-4">
+                <!-- Company Info Column -->
+                <div class="col-lg-4" data-aos="fade-up">
+                    <h5 class="text-white mb-4 animate__animated animate__fadeInDown">
+                        <i class="fas fa-rocket me-2 text-primary animate__animated animate__pulse animate__infinite" style="animation-duration: 2s;"></i>giftdevhub
+                    </h5>
+                    <p class="animate__animated animate__fadeIn animate__delay-1s">
+                        Innovative solutions for your business growth. We provide the best services to help you succeed in the digital world.
+                    </p>
+                    <div class="social-icons mt-4 animate__animated animate__fadeIn animate__delay-2s">
+                        <a href="#" class="social-icon animate__animated"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon animate__animated"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon animate__animated"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon animate__animated"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon animate__animated"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="text-white mb-4 animate__animated animate__fadeInDown">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 animate__animated animate__fadeInLeft animate__delay-1s">
+                            <a href="#about" class="footer-link">Home</a>
+                        </li>
+                        <li class="mb-2 animate__animated animate__fadeInLeft animate__delay-2s">
+                            <a href="#" class="footer-link">About Us</a>
+                        </li>
+                        <li class="animate__animated animate__fadeInLeft animate__delay-3s">
+                            <a href="#" class="footer-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="text-white mb-4 animate__animated animate__fadeInDown">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 animate__animated animate__fadeInRight animate__delay-1s">
+                            <a href="#" class="footer-link">Web Design</a>
+                        </li>
+                        <li class="mb-2 animate__animated animate__fadeInRight animate__delay-2s">
+                            <a href="#" class="footer-link">Development</a>
+                        </li>
+                        <li class="mb-2 animate__animated animate__fadeInRight animate__delay-3s">
+                            <a href="#" class="footer-link">Marketing</a>
+                        </li>
+                        <li class="mb-2 animate__animated animate__fadeInRight animate__delay-4s">
+                            <a href="#" class="footer-link">SEO</a>
+                        </li>
+                        <li class="animate__animated animate__fadeInRight animate__delay-5s">
+                            <a href="#" class="footer-link">Support</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="text-white mb-4 animate__animated animate__fadeInDown">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 animate__animated animate__fadeInUp animate__delay-1s">
+                            <i class="fas fa-map-marker-alt me-2 text-primary"></i> No. 5 Palevi close Eliogobolo, Eliozu, River state, Port Harcourt
+                        </li>
+                        <li class="mb-3 animate__animated animate__fadeInUp animate__delay-2s">
+                            <i class="fas fa-phone me-2 text-primary"></i> +234 8187818257
+                        </li>
+                        <li class="mb-3 animate__animated animate__fadeInUp animate__delay-3s">
+                            <i class="fas fa-envelope me-2 text-primary"></i> devgift8@gmail.com
+                        </li>
+                        <li class="animate__animated animate__fadeInUp animate__delay-4s">
+                            <i class="fas fa-clock me-2 text-primary"></i> <?php echo date_format(new DateTime(), 'l, F j, g:i a') ?>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-light opacity-25">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start animate__animated animate__fadeIn">
+                    <p class="mb-0">&copy; <?php echo date('Y') ?> giftdevhub. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end animate__animated animate__fadeIn">
+                    <p class="mb-0">
+                        <a href="#" class="footer-link me-3">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Back to Top Button -->
+            <div class="text-center mt-4 animate__animated animate__fadeInUp">
+                <a href="#" class="btn btn-primary btn-back-to-top animate__animated animate__pulse animate__infinite" style="animation-duration: 3s;">
+                    <i class="fas fa-arrow-up"></i> Back to Top
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Styles -->
+    <style>
+        /* Footer Base Styles */
+        footer {
+            position: relative;
+            overflow: hidden;
+            
+        }
+
+        /* Footer Circles */
+        .footer-circle {
+            border-radius: 50%;
+            background: rgba(13, 110, 253, 0.05);
+            z-index: 1;
+        }
+
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            top: -150px;
+            left: -150px;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .circle-2 {
+            width: 200px;
+            height: 200px;
+            bottom: -100px;
+            right: -100px;
+            animation: float 6s ease-in-out infinite reverse;
+        }
+
+        /* Footer Links */
+        .footer-link {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .footer-link:hover {
+            color: white;
+            padding-left: 5px;
+        }
+
+        .footer-link:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: #0d6efd;
+            transition: all 0.3s ease;
+        }
+
+        .footer-link:hover:before {
+            width: 100%;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: #0d6efd;
+            color: white !important;
+            transform: translateY(-3px);
+        }
+
+        /* Back to Top Button */
+        .btn-back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            z-index: 99;
+            border-radius: 50px;
+            padding: 10px 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            footer{
+                padding: 10px;
+            }
+            
+        }
+    </style>
+
+    <!-- Footer Scripts -->
+    <script>
+        // Back to Top Button
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.btn-back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        document.querySelector('.btn-back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate social icons on hover
+        document.querySelectorAll('.social-icon').forEach((icon, index) => {
+            icon.addEventListener('mouseenter', () => {
+                icon.classList.add('animate__rubberBand');
+            });
+            icon.addEventListener('mouseleave', () => {
+                setTimeout(() => {
+                    icon.classList.remove('animate__rubberBand');
+                }, 1000);
+            });
+        });
+
+        // Initialize AOS animations
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+        });
+    </script>
+    
+      <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Add hover animation to cards
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.classList.add('animate__pulse');
+            });
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('animate__pulse');
+            });
+        });
+    </script>
+     <script>
+        // Typewriter Effect
+        class TypeWriter {
+            constructor(txtElement, words, wait = 3000) {
+                this.txtElement = txtElement;
+                this.words = words;
+                this.txt = '';
+                this.wordIndex = 0;
+                this.wait = parseInt(wait, 10);
+                this.type();
+                this.isDeleting = false;
+            }
+
+            type() {
+                const current = this.wordIndex % this.words.length;
+                const fullTxt = this.words[current];
+
+                if (this.isDeleting) {
+                    this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                    this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
+
+                this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+                let typeSpeed = 100;
+
+                if (this.isDeleting) {
+                    typeSpeed /= 2;
+                }
+
+                if (!this.isDeleting && this.txt === fullTxt) {
+                    typeSpeed = this.wait;
+                    this.isDeleting = true;
+                } else if (this.isDeleting && this.txt === '') {
+                    this.isDeleting = false;
+                    this.wordIndex++;
+                    typeSpeed = 500;
+                }
+
+                setTimeout(() => this.type(), typeSpeed);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+
+        function init() {
+            const txtElement = document.querySelector('.typewriter');
+            const words = JSON.parse(txtElement.getAttribute('data-text'));
+            const wait = txtElement.getAttribute('data-wait') || 3000;
+            new TypeWriter(txtElement, words, wait);
+        }
+    </script>
+
+        <script>
+        // Initialize AOS animation library
+        AOS.init({
+            once: true // Animations will only happen once
+        });
+
+        // Optional: Add scroll reveal effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const hero = document.querySelector('.hero-section');
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+                hero.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+            });
+        });
+    </script>
+
+<!-- Counting Animation Script -->
+    <script>
+        // Counter animation for stats
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        function animateCounters() {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounters, 1);
+                } else {
+                    counter.innerText = target + '+';
+                }
+            });
+        }
+
+        // Start counting when section is in view
+        const statsSection = document.querySelector('.stats-card');
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                animateCounters();
+            }
+        });
+
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+
+        // Add hover class to cards
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.classList.add('animate__pulse');
+            });
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('animate__pulse');
+            });
+        });
+    </script>
+
+     <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+    <!-- Newsletter Script -->
+<script>
+    // Form validation
+    (function() {
+        'use strict';
+        const forms = document.querySelectorAll('.needs-validation');
+
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', function(event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                } else {
+                    event.preventDefault();
+                    // Show success message
+                    document.getElementById('newsletterSuccess').classList.remove('d-none');
+                    document.getElementById('newsletterSuccess').classList.add('animate__bounceIn');
+                    // Reset form
+                    form.reset();
+                    // Hide after 5 seconds
+                    setTimeout(() => {
+                        document.getElementById('newsletterSuccess').classList.add('animate__fadeOut');
+                    }, 5000);
+                }
+
+                form.classList.add('was-validated');
+            }, false);
+        });
+    })();
+
+    // Add animation to circles on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+        const circles = document.querySelectorAll('.newsletter-circle');
+        circles.forEach(circle => {
+            circle.style.opacity = '0';
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.classList.add('animate__animated', 'animate__fadeIn');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        circles.forEach(circle => {
+            observer.observe(circle);
+        });
+    });
+</script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- Initialize AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
 </body>
 
 </html>
