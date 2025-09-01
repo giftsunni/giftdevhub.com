@@ -209,58 +209,62 @@
 </div>
 
 <!-- Header/Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">
-    <div class="logo-container">
-        <img src="./logo2.jpg" alt="Logo" class="logo-img">
-    </div>
-</a>
+            <div class="logo-container">
+                <img src="./logo2.jpg" alt="Logo" class="logo-img">
+            </div>
+        </a>
 
-<style>
-/* Logo container */
-.logo-container {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    /* padding: 6px; */
-    /* background: #fff; */
-    border-radius: 14px;
-    /* border: 3px solid #0B182B; Bold dark border */
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+        <style>
+            /* Logo container */
+            .logo-container {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                /* padding: 6px; */
+                /* background: #fff; */
+                border-radius: 14px;
+                /* border: 3px solid #0B182B; Bold dark border */
+                /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
 
-/* Hover effect */
-.logo-container:hover {
-    transform: scale(1.07);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
-}
+            /* Hover effect */
+            .logo-container:hover {
+                transform: scale(1.07);
+                box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+            }
 
-/* Logo image */
-.logo-img {
-    width: 150px; /* Bigger logo */
-    height: auto;
-    max-height: 100px;
-    object-fit: contain;
-}
+            /* Logo image */
+            .logo-img {
+                width: 150px;
+                /* Bigger logo */
+                height: auto;
+                max-height: 100px;
+                object-fit: contain;
+            }
 
-/* Responsive adjustments */
-@media (max-width: 576px) {
+            /* Responsive adjustments */
+            @media (max-width: 780px) {
     .logo-img {
-        width: 90px;
-        max-height: 70px;
+        width: 150px;   /* increased width */
+        max-height: 120px; /* increased height */
     }
 }
-</style>
+
+            @media (max-width: 480px) {
+                .logo-img {
+                    width: 120px;
+                    max-height: 80px;
+                }
+            }
+            
+        </style>
 
 
 
-        <!-- Mobile Contact Info (shown only on mobile) -->
-        <div class="mobile-contact-info d-lg-none">
-            <span><i class="fas fa-phone-alt"></i> +234 806 138 2683</span>
-            <span><i class="fas fa-envelope"></i> info@gifdevthub.com</span>
-        </div>
 
         <button class="navbar-toggler" type="button" aria-label="Toggle navigation" id="navbarToggler">
             <span class="navbar-toggler-icon"></span>
